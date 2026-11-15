@@ -38,7 +38,7 @@ async function portAlive(host, port, ms = 500) {
 if (process.platform === 'win32') {
   const q = (name) => {
     try {
-      const out = execFileSync('reg', ['query', 'HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings', '/v', name], { encoding: 'latin1', windowsHide: true, timeout: 8000 })
+      const out = execFileSync('reg', ['query', 'HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings', '/v', name], { encoding: 'latin1', windowsHide: true, timeout: 8000, stdio: ['ignore', 'pipe', 'ignore'] })
       const m = out.match(new RegExp(name + '\\s+REG_\\w+\\s+(.*)'))
       return m ? m[1].trim() : ''
     } catch { return '' }
