@@ -1,6 +1,6 @@
 {
   "name": "agent-healthcheck",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "AI Agent 运行环境体检：系统代理、备份可恢复、密钥暴露、依赖新鲜度——一条命令出报告",
   "type": "module",
   "bin": {
