@@ -1,0 +1,13 @@
+{
+  "name": "agent-healthcheck",
+  "version": "0.1.0",
+  "description": "AI Agent 运行环境体检：系统代理、备份可恢复、密钥暴露、依赖新鲜度——一条命令出报告",
+  "type": "module",
+  "bin": { "agent-healthcheck": "bin/cli.mjs" },
+  "scripts": { "start": "node bin/cli.mjs" },
+  "keywords": ["agent", "healthcheck", "observability", "ops", "llm"],
+  "author": "hayabusa-yl",
+  "license": "MIT",
+  "engines": { "node": ">=18" },
+  "files": ["bin", "README.md", "LICENSE"]
+}
