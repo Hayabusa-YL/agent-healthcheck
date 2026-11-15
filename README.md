@@ -1,4 +1,4 @@
-# agent-healthcheck
+﻿# agent-healthcheck
 
 AI Agent 运行环境体检。不查代码（那是 linter 的事），查的是**跑起来会不会坏**。
 
@@ -34,3 +34,8 @@ npx agent-healthcheck --backup D:\my-backups
 ## License
 
 MIT
+
+---
+
+本项目由作者与 AI 助手协作完成：作者定方向、做取舍、验证结论；AI 负责整理素材与起草。功能与结论均可在本地复现。
+
